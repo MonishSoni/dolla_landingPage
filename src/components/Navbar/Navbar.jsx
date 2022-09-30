@@ -3,7 +3,7 @@ import { Nav, NavbarContainer, Navlogo, MobileIcon, NavMenu, Navitem, Navlinks,N
 import { HiMenuAlt2 } from "react-icons/hi";
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
             <Nav>
@@ -21,7 +21,7 @@ const Navbar = () => {
                         <NavBtnlink to='/signin'>Sign In</NavBtnlink>
                     </NavBtn>
                     {/* icon ========================== */}
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <HiMenuAlt2 />
                     </MobileIcon>
                 </NavbarContainer>

@@ -6,10 +6,11 @@ export const Nav = styled.nav`
   background: #000;
   height: 80px;
   display: flex;
+  margin-top: -80px;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: static;
+  position: sticky;
   top: 0;
   z-index: 11;
 
@@ -80,16 +81,16 @@ export const NavBtnlink = styled(Linkr)`
  white-space: nowrap;
  padding: 10px 22px;
  color: #010606;
- font-size: 16px;
+ font-size: 1rem;
  border: none;
  outline: none;
  cursor: pointer;
  text-decoration: none;
- transition: all 0.2s ease-in-out;
- font-weight: 400;
+ transition: all 0.3s ease;
+ font-weight: 600;
 
   &:hover{
-    color: #010606;
+    color: #01bf71;
     background-color: #fff;
   }
 `;
